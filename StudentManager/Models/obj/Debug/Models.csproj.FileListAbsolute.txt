@@ -1,0 +1,6 @@
+G:\studemo\StudentManager\Models\bin\Debug\Models.dll
+G:\studemo\StudentManager\Models\bin\Debug\Models.pdb
+G:\studemo\StudentManager\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+G:\studemo\StudentManager\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+G:\studemo\StudentManager\Models\obj\Debug\Models.dll
+G:\studemo\StudentManager\Models\obj\Debug\Models.pdb

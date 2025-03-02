@@ -1,0 +1,9 @@
+G:\studemo\StudentManager\DAL\bin\Debug\DAL.dll
+G:\studemo\StudentManager\DAL\bin\Debug\DAL.pdb
+G:\studemo\StudentManager\DAL\bin\Debug\Models.dll
+G:\studemo\StudentManager\DAL\bin\Debug\Models.pdb
+G:\studemo\StudentManager\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\studemo\StudentManager\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\studemo\StudentManager\DAL\obj\Debug\DAL.csproj.Up2Date
+G:\studemo\StudentManager\DAL\obj\Debug\DAL.dll
+G:\studemo\StudentManager\DAL\obj\Debug\DAL.pdb

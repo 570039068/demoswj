@@ -1074,3 +1074,25 @@ C:\Users\Administrator\Desktop\下载视频\课程[07]【中级突破】：【�
 C:\Users\Administrator\Desktop\下载视频\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本【带完整项目源码】\项目资料\完整UI\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmUserLogin.resources
 C:\Users\Administrator\Desktop\下载视频\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本【带完整项目源码】\项目资料\完整UI\StudentManager\StudentManager\obj\x86\Debug\StudentManager.Properties.Resources.resources
 C:\Users\Administrator\Desktop\下载视频\课程[07]【中级突破】：【项目实战】（一）学员管理系统完整版本【带完整项目源码】\项目资料\完整UI\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.GenerateResource.Cache
+G:\studemo\StudentManager\StudentManager\bin\Debug\StudentManager.exe.config
+G:\studemo\StudentManager\StudentManager\bin\Debug\StudentManager.exe
+G:\studemo\StudentManager\StudentManager\bin\Debug\StudentManager.pdb
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.AssemblyReference.cache
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmAbout.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmAddStudent.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmAttendance.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmAttendanceQuery.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmEditStudent.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmImportData.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmMain.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmModifyPwd.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmScoreManage.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmScoreQuery.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmStudentManage.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmStudentInfo.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.FrmUserLogin.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.Properties.Resources.resources
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.GenerateResource.cache
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.CoreCompileInputs.cache
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.exe
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.pdb
