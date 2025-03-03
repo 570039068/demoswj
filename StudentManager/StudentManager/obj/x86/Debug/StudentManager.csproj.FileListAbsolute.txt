@@ -1096,3 +1096,8 @@ G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.Gen
 G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.csproj.CoreCompileInputs.cache
 G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.exe
 G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentManager.pdb
+G:\studemo\StudentManager\StudentManager\bin\Debug\DAL.dll
+G:\studemo\StudentManager\StudentManager\bin\Debug\Models.dll
+G:\studemo\StudentManager\StudentManager\bin\Debug\DAL.pdb
+G:\studemo\StudentManager\StudentManager\bin\Debug\Models.pdb
+G:\studemo\StudentManager\StudentManager\obj\x86\Debug\StudentM.8DAA3114.Up2Date
