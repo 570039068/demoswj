@@ -9,6 +9,8 @@ namespace Models
     /// <summary>
     /// 学员实体类
     /// </summary>
+    /// 
+    [Serializable]
     public class Student
     {
         public int StudentId { get; set; } // 学生ID
@@ -22,6 +24,12 @@ namespace Models
         public string PhoneNumber { get; set; } // 电话号码
         public string StudentAddress { get; set; } // 地址
         public int ClassId { get; set; } // 班级外键
+        //扩展
+        public string ClassName {  get; set; }//班级名称
+
+        public int CSharp {  get; set; }
+        public int SQLServerDB { get; set; }
+
 
     }
 }

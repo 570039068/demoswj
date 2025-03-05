@@ -275,6 +275,7 @@
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbStu.Image = ((System.Drawing.Image)(resources.GetObject("pbStu.Image")));
             this.pbStu.Location = new System.Drawing.Point(1012, 144);
             this.pbStu.Margin = new System.Windows.Forms.Padding(6);
             this.pbStu.Name = "pbStu";
@@ -483,7 +484,7 @@
             this.StudentName.MinimumWidth = 10;
             this.StudentName.Name = "StudentName";
             this.StudentName.ReadOnly = true;
-            this.StudentName.Width = 150;
+            this.StudentName.Width = 110;
             // 
             // Gender
             // 
@@ -510,16 +511,17 @@
             this.CardNo.MinimumWidth = 10;
             this.CardNo.Name = "CardNo";
             this.CardNo.ReadOnly = true;
-            this.CardNo.Width = 150;
+            this.CardNo.Width = 200;
             // 
             // ClassName
             // 
-            this.ClassName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ClassName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.ClassName.DataPropertyName = "ClassName";
             this.ClassName.HeaderText = "所在班级";
             this.ClassName.MinimumWidth = 10;
             this.ClassName.Name = "ClassName";
             this.ClassName.ReadOnly = true;
+            this.ClassName.Width = 174;
             // 
             // FrmAddStudent
             // 

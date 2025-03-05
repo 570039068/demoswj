@@ -33,5 +33,12 @@ namespace DAL
             reader.Close();
             return list;
         }
+        //dataset绑定班级
+        public DataSet GetClassDataSet()
+        {
+            string sql = "select ClassName,ClassId from StudentClass";
+            return SQLHelper.GetDataSet(sql);
+        }
+
     }
 }

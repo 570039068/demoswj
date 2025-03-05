@@ -96,6 +96,26 @@ namespace DAL
             return Convert.ToDateTime(GetSingleResult("select getdate()"));
         }
 
+        public static DataSet GetDataSet(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connsql);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            try
+            {
+                conn.Open();
+                da.Fill(ds);
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+            finally { conn.Close(); }
+
+        }
 
     }
 }

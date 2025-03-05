@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Models;
 using DAL;
+using Common;
 
 
 namespace StudentManager
@@ -16,7 +17,7 @@ namespace StudentManager
         //数据访问对象
         private StudentClassService studentClassService=new StudentClassService();
         private StudentService studentService=new StudentService();
-
+      private  List<Student> studentslist = new List<Student>();//临时保存添加的学生的信息
         public FrmAddStudent()
         {
             InitializeComponent();
@@ -105,6 +106,71 @@ namespace StudentManager
 
 
             #endregion
+            #region 封住学生对象
+            Student objStudent = new Student()
+            {
+                StudentName = this.txtStudentName.Text.Trim(),
+                Gender = this.rdoMale.Checked ? "男" : "女",
+                Birthday = Convert.ToDateTime(this.dtpBirthday.Text),
+                StudentIdNo = this.txtStudentIdNo.Text.Trim(),
+                PhoneNumber = this.txtPhoneNumber.Text.Trim(),
+                ClassName = this.cboClassName.Text,
+                StudentAddress = this.txtAddress.Text.Trim() == "" ? "地址不详" : this.txtAddress.Text.Trim(),
+                CardNo = this.txtCardNo.Text.Trim(),
+                ClassId = Convert.ToInt32(this.cboClassName.SelectedValue),//获取选择班级对应classId
+                Age = DateTime.Now.Year - Convert.ToDateTime(this.dtpBirthday.Text).Year,
+                StuImage = this.pbStu.Image != null ? new SerializeObjectToString().SerializeObject(this.pbStu.Image) : ""
+
+            };
+
+
+            #endregion
+            #region 调用后台数据访问
+            try
+            {
+                int result = studentService.AddStudent(objStudent);//执行添加语句,返回第一行一列(studentId)
+                if (result > 1)
+                {
+                    objStudent.StudentId = result;
+                    this.studentslist.Add(objStudent);
+                    this.dgvStudentList.DataSource = null;
+                    this.dgvStudentList.AutoGenerateColumns = false;
+
+                    this.dgvStudentList.DataSource = this.studentslist;
+                   
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            #endregion
+            #region 添加完成后清空内容
+            // 清空文本框
+            this.txtStudentName.Text = "";
+            this.txtStudentIdNo.Text = "";
+            this.txtPhoneNumber.Text = "";
+            this.txtAddress.Text = "";
+            this.txtCardNo.Text = "";
+
+            // 重置单选按钮
+            this.rdoMale.Checked = false;
+            this.rdoFemale.Checked = false;
+
+            // 重置日期选择器（可设置为默认日期或保持当前值）
+            this.dtpBirthday.Value = DateTime.Now; // 或设置为默认值
+
+            // 清空下拉框选择
+            this.cboClassName.SelectedIndex = -1;
+
+            // 清空图片框
+            this.pbStu.Image = null;
+
+            // 将焦点定位到第一个输入控件
+            this.txtStudentName.Focus();
+            #endregion
         }
         //关闭窗体
         private void btnClose_Click(object sender, EventArgs e)
@@ -119,12 +185,14 @@ namespace StudentManager
         //选择新照片
         private void btnChoseImage_Click(object sender, EventArgs e)
         {
-         OpenFileDialog openFileDialog = new OpenFileDialog();
-            DialogResult result = openFileDialog.ShowDialog();
-            if(result==DialogResult.OK)
             {
-                this.pbStu.Image= Image.FromFile(openFileDialog.FileName);
+                OpenFileDialog objFileDialog = new OpenFileDialog();
+                DialogResult result = objFileDialog.ShowDialog();
+                if (result == DialogResult.OK)
+                    this.pbStu.Image = Image.FromFile(objFileDialog.FileName);
             }
+
+
         }
         //启动摄像头
         private void btnStartVideo_Click(object sender, EventArgs e)

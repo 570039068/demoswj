@@ -40,6 +40,10 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -49,7 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Class.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataGridViewStyle.cs" />
     <Compile Include="Common\DataValidate.cs" />
+    <Compile Include="Common\SerializeObjectToString.cs" />
+    <Compile Include="Common\StringSecurity.cs" />
     <Compile Include="FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMDBAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMDBAll.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +197,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="Class.xsc">
+      <DependentUpon>Class.xsd</DependentUpon>
+    </None>
+    <None Include="Class.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Class.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Class.xss">
+      <DependentUpon>Class.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -189,6 +217,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SMDBAll.xsc">
+      <DependentUpon>SMDBAll.xsd</DependentUpon>
+    </None>
+    <None Include="SMDBAll.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMDBAll.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMDBAll.xss">
+      <DependentUpon>SMDBAll.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
