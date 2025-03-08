@@ -178,6 +178,7 @@ namespace DAL
 
 
         #endregion
+
         #region 删除学生信息
         public int DeleteStudent(string  studentId)
         {
@@ -208,6 +209,41 @@ namespace DAL
 
 
 
+
+        #endregion
+
+        #region 打卡信息
+        /// <summary>
+        /// 根据卡号查询学生信息
+        /// </summary>
+        /// <param name="cardNo"></param>
+        /// <returns></returns>
+        public Student GetStudentByCardNo(string cardNo)
+        {
+            string sql = $"select StudentId,StudentName,Gender,Birthday,StudentIdNo," +
+               $"PhoneNumber,ClassName,StudentAddress,CardNo,StuImage from Students " +
+               $"inner join StudentClass on StudentClass.ClassId=Students.ClassId where CardNo='{cardNo}' ";
+            SqlDataReader reader = SQLHelper.GetReader(sql);
+            Student student = null;
+            while (reader.Read())
+            {
+                student = new Student()
+                {
+                    StudentId = Convert.ToInt32(reader["StudentId"]),
+                    StudentName = reader["StudentName"].ToString(),
+                    Gender = reader["Gender"].ToString(),
+                    StudentIdNo = reader["StudentIdNo"].ToString(),
+                    Birthday = Convert.ToDateTime(reader["Birthday"].ToString()),
+                    PhoneNumber = reader["PhoneNumber"].ToString(),
+                    ClassName = reader["ClassName"].ToString(),
+                    CardNo = reader["CardNo"].ToString(),
+                    StudentAddress = reader["StudentAddress"].ToString(),
+                    StuImage = reader["StuImage"] == null ? "" : reader["StuImage"].ToString(),
+                };
+            }
+            reader.Close();
+            return student;
+        }
 
         #endregion
     }

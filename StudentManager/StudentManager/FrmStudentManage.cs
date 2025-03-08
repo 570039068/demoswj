@@ -154,7 +154,16 @@ namespace StudentManager
         //打印当前学员信息
         private void btnPrint_Click(object sender, EventArgs e)
         {
-          
+          //如果没有列表显示,则不显示打印
+          if(this.dgvStudentList.RowCount==0||this.dgvStudentList.CurrentRow==null) return;
+          //获取当前学号
+          string stuId = this.dgvStudentList.CurrentRow.Cells["StudentId"].Value.ToString();
+            //根据学号获得学生对象
+            Student student = studentService.GetStudentById(Convert.ToInt32(stuId));
+            //调用excel模块实现打印预览
+            ExcelPrint.printStudent printStudent = new ExcelPrint.printStudent();
+
+            printStudent.ExecPrint(student);
         }
 
         //关闭

@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "G:\\studemo\\StudentManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|G:\\studemo\\StudentManager\\studentmanager\\frmscoremanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmscoremanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|g:\\studemo\\studentmanager\\studentmanager\\frmstudentmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmstudentmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|g:\\studemo\\studentmanager\\studentmanager\\frmscoremanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmscoremanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|g:\\studemo\\studentmanager\\dal\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|G:\\studemo\\StudentManager\\dal\\scorelistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\scorelistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|g:\\studemo\\studentmanager\\studentmanager\\excelprint\\printstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\excelprint\\printstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|G:\\studemo\\StudentManager\\dal\\importdatafromexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\importdatafromexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|g:\\studemo\\studentmanager\\dal\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|G:\\studemo\\StudentManager\\dal\\helper\\oledbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\helper\\oledbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|g:\\studemo\\studentmanager\\dal\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|G:\\studemo\\StudentManager\\studentmanager\\frmimportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmimportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7358D182-02D8-4974-9B32-394EAF8F50DE}|Models\\Models.csproj|G:\\studemo\\StudentManager\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7358D182-02D8-4974-9B32-394EAF8F50DE}|Models\\Models.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|G:\\studemo\\StudentManager\\studentmanager\\frmscorequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmscorequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|G:\\studemo\\StudentManager\\dal\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0BBBA43-56CD-493D-93B7-8B58DD6B2E0E}|DAL\\DAL.csproj|solutionrelative:dal\\helper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|G:\\studemo\\StudentManager\\studentmanager\\frmscorequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\frmscorequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|G:\\studemo\\StudentManager\\studentmanager\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{86602566-2F39-4DB5-9B43-F6A87C397788}|StudentManager\\StudentManager.csproj|solutionrelative:studentmanager\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +50,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\StudentService.cs",
+              "RelativeDocumentMoniker": "DAL\\StudentService.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\DAL\\StudentService.cs",
+              "RelativeToolTip": "DAL\\StudentService.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T13:13:49.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "packages.config",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\packages.config",
+              "RelativeDocumentMoniker": "DAL\\packages.config",
+              "ToolTip": "G:\\studemo\\StudentManager\\DAL\\packages.config",
+              "RelativeToolTip": "DAL\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-08T13:09:22.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmStudentManage.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmStudentManage.cs",
+              "RelativeDocumentMoniker": "StudentManager\\FrmStudentManage.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmStudentManage.cs",
+              "RelativeToolTip": "StudentManager\\FrmStudentManage.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAmwJ4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:54:56.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "printStudent.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\ExcelPrint\\printStudent.cs",
+              "RelativeDocumentMoniker": "StudentManager\\ExcelPrint\\printStudent.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\ExcelPrint\\printStudent.cs",
+              "RelativeToolTip": "StudentManager\\ExcelPrint\\printStudent.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwBsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:35:58.052Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -50,89 +114,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmScoreManage.cs",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreManage.cs",
-              "RelativeDocumentMoniker": "StudentManager\\FrmScoreManage.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreManage.cs",
-              "RelativeToolTip": "StudentManager\\FrmScoreManage.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAYwCsAAAB5AAAA",
+              "DocumentIndex": 5,
+              "Title": "OleDbHelper.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\Helper\\OleDbHelper.cs",
+              "RelativeDocumentMoniker": "DAL\\Helper\\OleDbHelper.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\DAL\\Helper\\OleDbHelper.cs",
+              "RelativeToolTip": "DAL\\Helper\\OleDbHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwA8AAAByAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T11:03:56.913Z",
+              "WhenOpened": "2025-03-08T05:58:38.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Student.cs",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA3wB4AAAAsAAAA",
+              "Title": "ImportDataFromExcel.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\ImportDataFromExcel.cs",
+              "RelativeDocumentMoniker": "DAL\\ImportDataFromExcel.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\DAL\\ImportDataFromExcel.cs",
+              "RelativeToolTip": "DAL\\ImportDataFromExcel.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCAAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T12:41:33.54Z",
+              "WhenOpened": "2025-03-08T07:02:10.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmScoreManage.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreManage.cs",
-              "RelativeDocumentMoniker": "StudentManager\\FrmScoreManage.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreManage.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "StudentManager\\FrmScoreManage.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T12:35:52.372Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScoreListService.cs",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\ScoreListService.cs",
-              "RelativeDocumentMoniker": "DAL\\ScoreListService.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\DAL\\ScoreListService.cs",
-              "RelativeToolTip": "DAL\\ScoreListService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwG8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:03:20.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SQLHelper.cs",
               "DocumentMoniker": "G:\\studemo\\StudentManager\\DAL\\Helper\\SQLHelper.cs",
               "RelativeDocumentMoniker": "DAL\\Helper\\SQLHelper.cs",
               "ToolTip": "G:\\studemo\\StudentManager\\DAL\\Helper\\SQLHelper.cs",
               "RelativeToolTip": "DAL\\Helper\\SQLHelper.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAuwG8AAAANAAAA",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAI0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:04:34.709Z"
+              "WhenOpened": "2025-03-08T05:58:59.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmScoreQuery.cs",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreQuery.cs",
-              "RelativeDocumentMoniker": "StudentManager\\FrmScoreQuery.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreQuery.cs",
-              "RelativeToolTip": "StudentManager\\FrmScoreQuery.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAArwCgAAAAMAAAA",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:01:41.222Z"
+              "WhenOpened": "2025-03-08T09:55:37.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmScoreQuery.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreQuery.cs",
-              "RelativeDocumentMoniker": "StudentManager\\FrmScoreQuery.cs",
-              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmScoreQuery.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "StudentManager\\FrmScoreQuery.cs [\u8BBE\u8BA1]",
+              "DocumentIndex": 9,
+              "Title": "app.config",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\app.config",
+              "RelativeDocumentMoniker": "StudentManager\\app.config",
+              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\app.config",
+              "RelativeToolTip": "StudentManager\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-08T10:13:24.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmImportData.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "G:\\studemo\\StudentManager\\StudentManager\\FrmImportData.cs",
+              "RelativeDocumentMoniker": "StudentManager\\FrmImportData.cs",
+              "ToolTip": "G:\\studemo\\StudentManager\\StudentManager\\FrmImportData.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "StudentManager\\FrmImportData.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:01:50.59Z"
+              "WhenOpened": "2025-03-08T08:08:34.781Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             }
           ]
         }

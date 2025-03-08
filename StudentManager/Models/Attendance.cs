@@ -11,5 +11,6 @@ namespace Models
     /// </summary>
     public class Attendance
     {
+
     }
 }

@@ -29,6 +29,7 @@ namespace Models
 
         public int CSharp {  get; set; }
         public int SQLServerDB { get; set; }
+        public DateTime SignTime { get; set; }//签到时间
 
 
     }

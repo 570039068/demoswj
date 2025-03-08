@@ -63,7 +63,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvStudentList = new System.Windows.Forms.DataGridView();
-            this.DTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.SignTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CardNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,9 +84,10 @@
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStu.Location = new System.Drawing.Point(24, 122);
+            this.pbStu.Location = new System.Drawing.Point(48, 244);
+            this.pbStu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pbStu.Name = "pbStu";
-            this.pbStu.Size = new System.Drawing.Size(179, 198);
+            this.pbStu.Size = new System.Drawing.Size(356, 394);
             this.pbStu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbStu.TabIndex = 95;
             this.pbStu.TabStop = false;
@@ -93,9 +95,10 @@
             // txtStuCardNo
             // 
             this.txtStuCardNo.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStuCardNo.Location = new System.Drawing.Point(78, 142);
+            this.txtStuCardNo.Location = new System.Drawing.Point(156, 284);
+            this.txtStuCardNo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtStuCardNo.Name = "txtStuCardNo";
-            this.txtStuCardNo.Size = new System.Drawing.Size(140, 35);
+            this.txtStuCardNo.Size = new System.Drawing.Size(276, 62);
             this.txtStuCardNo.TabIndex = 0;
             this.txtStuCardNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtStuCardNo_KeyDown);
             // 
@@ -105,10 +108,10 @@
             this.lblWeek.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblWeek.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWeek.ForeColor = System.Drawing.Color.Red;
-            this.lblWeek.Location = new System.Drawing.Point(527, 75);
-            this.lblWeek.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.lblWeek.Location = new System.Drawing.Point(1054, 150);
+            this.lblWeek.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.lblWeek.Name = "lblWeek";
-            this.lblWeek.Size = new System.Drawing.Size(45, 29);
+            this.lblWeek.Size = new System.Drawing.Size(90, 58);
             this.lblWeek.TabIndex = 77;
             this.lblWeek.Text = "0";
             this.lblWeek.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,10 +122,10 @@
             this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDay.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDay.ForeColor = System.Drawing.Color.Red;
-            this.lblDay.Location = new System.Drawing.Point(221, 75);
-            this.lblDay.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.lblDay.Location = new System.Drawing.Point(442, 150);
+            this.lblDay.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(45, 29);
+            this.lblDay.Size = new System.Drawing.Size(90, 58);
             this.lblDay.TabIndex = 79;
             this.lblDay.Text = "00";
             this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,10 +136,10 @@
             this.lblMonth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblMonth.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonth.ForeColor = System.Drawing.Color.Red;
-            this.lblMonth.Location = new System.Drawing.Point(137, 75);
-            this.lblMonth.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.lblMonth.Location = new System.Drawing.Point(274, 150);
+            this.lblMonth.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.lblMonth.Name = "lblMonth";
-            this.lblMonth.Size = new System.Drawing.Size(45, 29);
+            this.lblMonth.Size = new System.Drawing.Size(90, 58);
             this.lblMonth.TabIndex = 78;
             this.lblMonth.Text = "00";
             this.lblMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,10 +150,10 @@
             this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTime.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Red;
-            this.lblTime.Location = new System.Drawing.Point(321, 75);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.lblTime.Location = new System.Drawing.Point(642, 150);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(134, 29);
+            this.lblTime.Size = new System.Drawing.Size(268, 58);
             this.lblTime.TabIndex = 76;
             this.lblTime.Text = "00 : 00  00";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,10 +164,10 @@
             this.lblYear.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblYear.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYear.ForeColor = System.Drawing.Color.Red;
-            this.lblYear.Location = new System.Drawing.Point(25, 75);
-            this.lblYear.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.lblYear.Location = new System.Drawing.Point(50, 150);
+            this.lblYear.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(73, 29);
+            this.lblYear.Size = new System.Drawing.Size(146, 58);
             this.lblYear.TabIndex = 75;
             this.lblYear.Text = "0000";
             this.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,10 +176,10 @@
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(455, 70);
-            this.label9.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label9.Location = new System.Drawing.Point(910, 140);
+            this.label9.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 39);
+            this.label9.Size = new System.Drawing.Size(144, 78);
             this.label9.TabIndex = 72;
             this.label9.Text = "星期";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -185,10 +188,10 @@
             // 
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(266, 70);
-            this.label6.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label6.Location = new System.Drawing.Point(532, 140);
+            this.label6.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 39);
+            this.label6.Size = new System.Drawing.Size(78, 78);
             this.label6.TabIndex = 71;
             this.label6.Text = "日";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,10 +200,10 @@
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(182, 70);
-            this.label5.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label5.Location = new System.Drawing.Point(364, 140);
+            this.label5.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 39);
+            this.label5.Size = new System.Drawing.Size(78, 78);
             this.label5.TabIndex = 74;
             this.label5.Text = "月";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,10 +212,10 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(98, 70);
-            this.label2.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label2.Location = new System.Drawing.Point(196, 140);
+            this.label2.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 39);
+            this.label2.Size = new System.Drawing.Size(78, 78);
             this.label2.TabIndex = 73;
             this.label2.Text = "年";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,9 +226,10 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(844, 70);
+            this.btnClose.Location = new System.Drawing.Point(1688, 140);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 35);
+            this.btnClose.Size = new System.Drawing.Size(208, 70);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "结束打卡";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,10 +240,10 @@
             // 
             this.label10.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(5, 26);
-            this.label10.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label10.Location = new System.Drawing.Point(10, 52);
+            this.label10.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 39);
+            this.label10.Size = new System.Drawing.Size(146, 78);
             this.label10.TabIndex = 89;
             this.label10.Text = "应到";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -250,10 +254,10 @@
             this.lblStuClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStuClass.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblStuClass.ForeColor = System.Drawing.Color.Black;
-            this.lblStuClass.Location = new System.Drawing.Point(571, 82);
-            this.lblStuClass.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblStuClass.Location = new System.Drawing.Point(1142, 164);
+            this.lblStuClass.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblStuClass.Name = "lblStuClass";
-            this.lblStuClass.Size = new System.Drawing.Size(140, 39);
+            this.lblStuClass.Size = new System.Drawing.Size(280, 78);
             this.lblStuClass.TabIndex = 84;
             this.lblStuClass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -263,10 +267,10 @@
             this.lblStuId.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStuId.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblStuId.ForeColor = System.Drawing.Color.Black;
-            this.lblStuId.Location = new System.Drawing.Point(333, 82);
-            this.lblStuId.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblStuId.Location = new System.Drawing.Point(666, 164);
+            this.lblStuId.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblStuId.Name = "lblStuId";
-            this.lblStuId.Size = new System.Drawing.Size(140, 39);
+            this.lblStuId.Size = new System.Drawing.Size(280, 78);
             this.lblStuId.TabIndex = 85;
             this.lblStuId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -276,10 +280,10 @@
             this.lblAbsenceCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAbsenceCount.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblAbsenceCount.ForeColor = System.Drawing.Color.Red;
-            this.lblAbsenceCount.Location = new System.Drawing.Point(571, 26);
-            this.lblAbsenceCount.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblAbsenceCount.Location = new System.Drawing.Point(1142, 52);
+            this.lblAbsenceCount.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblAbsenceCount.Name = "lblAbsenceCount";
-            this.lblAbsenceCount.Size = new System.Drawing.Size(140, 39);
+            this.lblAbsenceCount.Size = new System.Drawing.Size(280, 78);
             this.lblAbsenceCount.TabIndex = 82;
             this.lblAbsenceCount.Text = "0";
             this.lblAbsenceCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,10 +293,10 @@
             this.lblReal.BackColor = System.Drawing.Color.White;
             this.lblReal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblReal.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblReal.Location = new System.Drawing.Point(333, 26);
-            this.lblReal.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblReal.Location = new System.Drawing.Point(666, 52);
+            this.lblReal.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblReal.Name = "lblReal";
-            this.lblReal.Size = new System.Drawing.Size(140, 39);
+            this.lblReal.Size = new System.Drawing.Size(280, 78);
             this.lblReal.TabIndex = 83;
             this.lblReal.Text = "0";
             this.lblReal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -302,10 +306,10 @@
             this.lblCount.BackColor = System.Drawing.Color.White;
             this.lblCount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCount.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblCount.Location = new System.Drawing.Point(78, 26);
-            this.lblCount.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblCount.Location = new System.Drawing.Point(156, 52);
+            this.lblCount.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(140, 39);
+            this.lblCount.Size = new System.Drawing.Size(280, 78);
             this.lblCount.TabIndex = 81;
             this.lblCount.Text = "0";
             this.lblCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -316,10 +320,10 @@
             this.lblStuName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblStuName.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblStuName.ForeColor = System.Drawing.Color.Black;
-            this.lblStuName.Location = new System.Drawing.Point(78, 82);
-            this.lblStuName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblStuName.Location = new System.Drawing.Point(156, 164);
+            this.lblStuName.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             this.lblStuName.Name = "lblStuName";
-            this.lblStuName.Size = new System.Drawing.Size(140, 39);
+            this.lblStuName.Size = new System.Drawing.Size(280, 78);
             this.lblStuName.TabIndex = 80;
             this.lblStuName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -328,9 +332,10 @@
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblInfo.ForeColor = System.Drawing.Color.Red;
-            this.lblInfo.Location = new System.Drawing.Point(243, 150);
+            this.lblInfo.Location = new System.Drawing.Point(486, 300);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(74, 22);
+            this.lblInfo.Size = new System.Drawing.Size(146, 42);
             this.lblInfo.TabIndex = 96;
             this.lblInfo.Text = "准备打卡";
             // 
@@ -339,9 +344,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(22, 22);
+            this.label1.Location = new System.Drawing.Point(44, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 31);
+            this.label1.Size = new System.Drawing.Size(399, 62);
             this.label1.TabIndex = 97;
             this.label1.Text = "考勤打卡进行中...";
             // 
@@ -362,9 +368,11 @@
             this.gp01.Controls.Add(this.lblAbsenceCount);
             this.gp01.Controls.Add(this.lblStuId);
             this.gp01.Controls.Add(this.lblStuClass);
-            this.gp01.Location = new System.Drawing.Point(237, 122);
+            this.gp01.Location = new System.Drawing.Point(474, 244);
+            this.gp01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gp01.Name = "gp01";
-            this.gp01.Size = new System.Drawing.Size(746, 198);
+            this.gp01.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gp01.Size = new System.Drawing.Size(1492, 396);
             this.gp01.TabIndex = 0;
             this.gp01.TabStop = false;
             this.gp01.Text = "[考勤信息]";
@@ -373,10 +381,10 @@
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(498, 26);
-            this.label4.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label4.Location = new System.Drawing.Point(996, 52);
+            this.label4.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 39);
+            this.label4.Size = new System.Drawing.Size(146, 78);
             this.label4.TabIndex = 89;
             this.label4.Text = "缺勤";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -385,10 +393,10 @@
             // 
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(258, 26);
-            this.label3.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label3.Location = new System.Drawing.Point(516, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 39);
+            this.label3.Size = new System.Drawing.Size(146, 78);
             this.label3.TabIndex = 89;
             this.label3.Text = "实到";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -397,10 +405,10 @@
             // 
             this.label11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(498, 82);
-            this.label11.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label11.Location = new System.Drawing.Point(996, 164);
+            this.label11.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 39);
+            this.label11.Size = new System.Drawing.Size(146, 78);
             this.label11.TabIndex = 89;
             this.label11.Text = "班级";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -409,10 +417,10 @@
             // 
             this.label8.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(257, 82);
-            this.label8.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label8.Location = new System.Drawing.Point(514, 164);
+            this.label8.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 39);
+            this.label8.Size = new System.Drawing.Size(146, 78);
             this.label8.TabIndex = 89;
             this.label8.Text = "学号";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -421,10 +429,10 @@
             // 
             this.label12.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(5, 140);
-            this.label12.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label12.Location = new System.Drawing.Point(10, 280);
+            this.label12.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 39);
+            this.label12.Size = new System.Drawing.Size(146, 78);
             this.label12.TabIndex = 89;
             this.label12.Text = "卡号";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -433,10 +441,10 @@
             // 
             this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(6, 81);
-            this.label7.Margin = new System.Windows.Forms.Padding(17, 0, 17, 0);
+            this.label7.Location = new System.Drawing.Point(12, 162);
+            this.label7.Margin = new System.Windows.Forms.Padding(34, 0, 34, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 39);
+            this.label7.Size = new System.Drawing.Size(146, 78);
             this.label7.TabIndex = 89;
             this.label7.Text = "姓名";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -456,7 +464,7 @@
             this.dgvStudentList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudentList.ColumnHeadersHeight = 30;
             this.dgvStudentList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DTime,
+            this.SignTime,
             this.StudentId,
             this.CardNo,
             this.StudentName,
@@ -471,7 +479,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvStudentList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudentList.EnableHeadersVisualStyles = false;
-            this.dgvStudentList.Location = new System.Drawing.Point(24, 336);
+            this.dgvStudentList.Location = new System.Drawing.Point(48, 672);
+            this.dgvStudentList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvStudentList.Name = "dgvStudentList";
             this.dgvStudentList.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -482,24 +491,27 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Red;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvStudentList.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvStudentList.RowHeadersWidth = 82;
             this.dgvStudentList.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvStudentList.RowTemplate.Height = 23;
             this.dgvStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudentList.Size = new System.Drawing.Size(959, 316);
+            this.dgvStudentList.Size = new System.Drawing.Size(1918, 632);
             this.dgvStudentList.TabIndex = 98;
             // 
-            // DTime
+            // SignTime
             // 
-            this.DTime.DataPropertyName = "DTime";
-            this.DTime.HeaderText = "打卡时间";
-            this.DTime.Name = "DTime";
-            this.DTime.ReadOnly = true;
-            this.DTime.Width = 150;
+            this.SignTime.DataPropertyName = "SignTime";
+            this.SignTime.HeaderText = "打卡时间";
+            this.SignTime.MinimumWidth = 10;
+            this.SignTime.Name = "SignTime";
+            this.SignTime.ReadOnly = true;
+            this.SignTime.Width = 150;
             // 
             // StudentId
             // 
             this.StudentId.DataPropertyName = "StudentId";
             this.StudentId.HeaderText = "学号";
+            this.StudentId.MinimumWidth = 10;
             this.StudentId.Name = "StudentId";
             this.StudentId.ReadOnly = true;
             this.StudentId.Width = 150;
@@ -508,6 +520,7 @@
             // 
             this.CardNo.DataPropertyName = "CardNo";
             this.CardNo.HeaderText = "考勤卡号";
+            this.CardNo.MinimumWidth = 10;
             this.CardNo.Name = "CardNo";
             this.CardNo.ReadOnly = true;
             this.CardNo.Width = 150;
@@ -516,6 +529,7 @@
             // 
             this.StudentName.DataPropertyName = "StudentName";
             this.StudentName.HeaderText = "姓名";
+            this.StudentName.MinimumWidth = 10;
             this.StudentName.Name = "StudentName";
             this.StudentName.ReadOnly = true;
             this.StudentName.Width = 150;
@@ -524,22 +538,25 @@
             // 
             this.Gender.DataPropertyName = "Gender";
             this.Gender.HeaderText = "性别";
+            this.Gender.MinimumWidth = 10;
             this.Gender.Name = "Gender";
             this.Gender.ReadOnly = true;
+            this.Gender.Width = 200;
             // 
             // ClassName
             // 
             this.ClassName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ClassName.DataPropertyName = "ClassName";
             this.ClassName.HeaderText = "所在班级";
+            this.ClassName.MinimumWidth = 10;
             this.ClassName.Name = "ClassName";
             this.ClassName.ReadOnly = true;
             // 
             // FrmAttendance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 669);
+            this.ClientSize = new System.Drawing.Size(2034, 1338);
             this.Controls.Add(this.dgvStudentList);
             this.Controls.Add(this.gp01);
             this.Controls.Add(this.label1);
@@ -555,11 +572,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "FrmAttendance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "[考勤打卡进行中...]";
-
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
             this.gp01.ResumeLayout(false);
             this.gp01.PerformLayout();
@@ -601,7 +618,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvStudentList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DTime;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SignTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentId;
         private System.Windows.Forms.DataGridViewTextBoxColumn CardNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
