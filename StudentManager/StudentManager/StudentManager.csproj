@@ -81,6 +81,7 @@
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -99,7 +100,8 @@
     <Compile Include="Common\DataValidate.cs" />
     <Compile Include="Common\SerializeObjectToString.cs" />
     <Compile Include="Common\StringSecurity.cs" />
-    <Compile Include="ExcelPrint\printStudent.cs" />
+    <Compile Include="ExcelPrint\DataExport.cs" />
+    <Compile Include="ExcelPrint\PrintStudent.cs" />
     <Compile Include="FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>

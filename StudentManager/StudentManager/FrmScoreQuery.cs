@@ -66,7 +66,9 @@ namespace StudentManager
         //打印当前的成绩信息
         private void btnPrint_Click(object sender, EventArgs e)
         {
-          
+
+            new ExcelPrint.DataExport().Export(this.dgvScoreList);
+            
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)

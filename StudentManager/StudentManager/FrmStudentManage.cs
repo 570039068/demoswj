@@ -161,7 +161,7 @@ namespace StudentManager
             //根据学号获得学生对象
             Student student = studentService.GetStudentById(Convert.ToInt32(stuId));
             //调用excel模块实现打印预览
-            ExcelPrint.printStudent printStudent = new ExcelPrint.printStudent();
+            ExcelPrint.PrintStudent printStudent = new ExcelPrint.PrintStudent();
 
             printStudent.ExecPrint(student);
         }

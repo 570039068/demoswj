@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using Models;
-using DAL;
 using Microsoft.Office.Interop.Excel;
-using System.Drawing;
-using System.IO;
-using Microsoft.CSharp;
+using System;
 namespace StudentManager.ExcelPrint
 {
     /// <summary>
     /// 基于excel模板打印学生信息
     /// </summary>
-    public class printStudent
+    public class PrintStudent
     {
+
         public void ExecPrint(Student student)
         {
+            
             //1.定义一个工作簿
-            Microsoft.Office.Interop.Excel.Application excelApp=new Microsoft.Office.Interop.Excel.Application();
+            dynamic excelApp = new Microsoft.Office.Interop.Excel.Application();
+            //Microsoft.Office.Interop.Excel.Application excelApp=new Microsoft.Office.Interop.Excel.Application();
+            
             //2.获取创建好的工作簿
-            string excelBookPath = "StudentInfo.xlsx";
+            //string excelBookPath = "StudentInfo.xlsx";
+            string excelBookPath = Environment.CurrentDirectory + "\\StudentInfo.xlsx";
             //3.将现有工作簿加入已经定义的工作簿集合
             excelApp.Workbooks.Add(excelBookPath);
             //4.获取第一个工作表
@@ -33,7 +31,8 @@ namespace StudentManager.ExcelPrint
             sheet.Cells[4, 6] = student.StudentName;
             sheet.Cells[4, 8] = student.Gender;
             sheet.Cells[6, 4] = student.ClassName;
-            sheet.Cells[6, 8] = student.PhoneNumber;
+            sheet.Cells[6, 6] = student.PhoneNumber;
+            sheet.Cells[8,4]=student.StudentAddress;
             //6.打印预览
             excelApp.Visible = true;
             excelApp.Sheets.PrintPreview(true);
@@ -43,7 +42,6 @@ namespace StudentManager.ExcelPrint
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
             excelApp = null;
 
-            sheet.Cells[8, 4] = student.StudentAddress;
 
         }
     }
